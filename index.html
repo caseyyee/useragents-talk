@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Call My User Agent</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="decky.css">
+    <link rel="stylesheet" href="solarized_light.css">
+    <link rel="stylesheet" href="truecrimes_regular_macroman/stylesheet.css">
+    <script src="highlight.min.js"></script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Call My<br>User Agent</h1>
+    </section>
+    <section>
+      <img src="img/mozilla_wordmark.svg">
+    </section>
+    <section>
+      <code>Mozilla/5.0</code>
+    </section>
+    <section>
+      User Agent String
+    </section>
+    <section>
+      <div><mark>User Agent</mark> String</div>
+    </section>
+
+    <section>
+      <small>Mosaic</small>
+      <code class="ua">NCSA_Mosaic/2.0 (Windows 3.1)</code>
+    </section>
+    <section>
+      <small>Netscape</small>
+      <code class="ua">Mozilla/1.0 (Win3.1)</code>
+    </section>
+    <section>
+      <small>Internet Explorer</small>
+      <code class="ua">Mozilla/1.22 (compatible; MSIE 2.0; Windows 95)</code>
+    </section>
+    <section>
+      <small>Mozilla</small>
+      <code class="ua">Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1) Gecko/20020826</code>
+    </section>
+    <section>
+      <small>Firefox</small>
+      <code class="ua">Mozilla/5.0 (Windows; U; Windows NT 5.1; sv-SE; rv:1.7.5) Gecko/20041108 Firefox/1.0</code>
+    </section>
+    <section>
+      <small>Safari</small>
+      <code class="ua">Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/85.7 (KHTML, like Gecko) Safari/85.5</code>
+    </section>
+    <section>
+      <small>Chrome</small>
+      <code class="ua">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36</code>
+    </section>
+    <section>
+      <small>Edge</small>
+      <code class="ua">Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10136</code>
+    </section>
+    <section>
+      <img src="img/rocks.jpeg">
+    </section>
+
+
+    <section>
+      <h1>Fathom</h1>
+    </section>
+    <section>
+      <pre><code class="js">var titleFinder = ruleset(
+    // Give any title tag a score of 1, and tag it as title-ish:
+    rule(dom("title"),
+         node => [{score: 1, flavor: 'titley'}]),
+
+    // Give any OpenGraph meta tag a score of 2,
+    // and tag it as title-ish as well:
+    rule(dom('meta[property="og:title"]'),
+         node => [{score: 2, flavor: 'titley'}]),
+
+    // Take all title-ish things, and punish them if they contain
+    // navigational claptrap like colons or dashes:
+    rule(flavor("titley"),
+         node => [{score: hasColonsOrDashes(node.element) ? .5 : 1}])
+);</code></pre>
+    </section>
+    <section>
+      <h2>Demo Time!</h2>
+    </section>
+
+
+    <section>
+      Retro-future of user agents
+    </section>
+    <section>
+      Hyperland
+    </section>
+    <section>
+      RDF
+    </section>
+    <section>
+      OpenXanadu
+    </section>
+    <section>
+      Perhaps silly, but not all wrong.
+    </section>
+    <section>
+      How do User Agents represent us?
+    </section>
+    <section>
+      Accept Headers
+    </section>
+    <section>
+      - Lang
+    </section>
+    <section>
+      - Encoding
+    </section>
+    <section>
+      - SSL
+    </section>
+    <section>
+      - Cookies
+    </section>
+    <section>
+      - Permissions
+    </section>
+    <section>
+      - Saved passwords
+    </section>
+    <section>
+      - Autofill
+    </section>
+    <section>
+      <p>The experience of browsing the web is a negotiation between authors and readers,
+    mediated by browsers</p>
+    </section>
+    <section>
+      <h2>
+        The User Agent<div><i>~vs~</i></div> The Runtime
+      </h2>
+    </section>
+    <section>
+      <img src="img/install-flash.png">
+    </section>
+    <section>
+      <img src="img/install-java.png">
+    </section>
+    <section>
+      Accessibility!
+    </section>
+    <section>
+      <img src="img/clickhole.png">
+    </section>
+    <section>
+      <img src="img/readermode.png">
+    </section>
+    <section>
+      Who's processing my site and how?
+    </section>
+    <section>
+      - Browsers (duh)
+    </section>
+    <section>
+      - Crawlers
+    </section>
+    <section>
+      - Facebook and Twitter
+    </section>
+    <section>
+      "Cards"
+    </section>
+    <section>
+      - Open Graph
+    </section>
+    <section>
+      - Twitter Card
+    </section>
+    <section>
+      - Embed.ly
+    </section>
+    <section>
+      - Fathom
+    </section>
+
+    <section>
+      How do authors communicate with user agents?
+    </section>
+
+    <section>
+      We're in the pixels and pointers era, but it won't last forever.
+    </section>
+
+    <section>
+      # History of User Agents
+    </section>
+    <section>
+      Douglas Adams - Hyperland
+    </section>
+    <section>
+      User Agent
+    </section>
+    <section>
+      User Agent String
+    </section>
+    <section>
+      <a class="cite" href="http://webaim.org/blog/user-agent-string-history/">History of the browser user-agent string.</a>
+    </section>
+    <section>
+      Jerry MacGuire
+    </section>
+
+    <section>
+      Be seen *and* read
+    </section>
+
+    <section>
+      The User Agent
+      vs The Runtime
+    </section>
+    <section>
+      We live in a world
+    </section>
+
+    <section>
+      Crawlers
+    </section>
+
+    <section>
+      Standards
+    </section>
+
+    <section>
+      Link Tags
+    </section>
+    <section>
+      Rel alternate
+    </section>
+    <section>
+      Rel Canonical
+    </section>
+    <section>
+      Rel Next
+    </section>
+    <section>
+      Rel Prev
+    </section>
+    <section>
+      Rel Search
+    </section>
+
+    <section>
+      Less Standardized tech
+    </section>
+    <section>
+      Open Graph
+    </section>
+    <section>
+      Twitter Card
+    </section>
+    <section>
+      Embed.ly
+    </section>
+    <section>
+      Fathom
+    </section>
+    <section>
+      App Manifest
+    </section>
+    <section>
+      Reader Mode
+    </section>
+    <section>
+      Content Blocking
+    </section>
+    <section>
+      Tracking Protection
+    </section>
+    <section>
+      <h1 class="vr">VR<h1>
+    </section>
+
+    <footer>
+      <div class="progress talk-progress"></div>
+      <div class="progress time-progress"></div>
+    </footer>
+    <script src="decky.js"></script>
+    <script>
+
+      var els = document.querySelectorAll('code[data-src]');
+      Array.from(els).forEach(function (el) {
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", function () {
+          el.innerHTML = this.responseText.replace('<', '&lt;', 'g');
+          hljs.highlightBlock(el);
+        });
+        xhr.open("GET", el.getAttribute('data-src'));
+        xhr.send();
+      });
+
+      var iframes = document.querySelectorAll('iframe');
+      iframes = Array.from(iframes);
+      iframes.forEach(function (i) {
+        var src = i.src;
+        i.setAttribute('data-src', src);
+        i.src = '';
+      });
+
+      var talkProgress = document.querySelector('.talk-progress');
+      var timeProgress = document.querySelector('.time-progress');
+      var sTime;
+      var timer;
+      var going = false;
+      decky.onSlideChange = function (n) {
+        if (n > 1 && !going) {
+          going = true;
+          timer = setInterval(update, 100);
+          sTime = Date.now();
+          console.log('starting timer');
+        }
+        var pct = n / decky.num * 100;
+        talkProgress.style.transform = 'translate(' + pct + '%, 0)';
+
+        iframes.forEach(function (i) {
+          i.src = '';
+        });
+
+        var f = document.querySelector('.active iframe');
+        if (f && window.top === window) {
+          f.src = f.getAttribute('data-src');
+        }
+      };
+      function update() {
+        var time = Math.min(100, ((Date.now() - sTime) / (40 * 60 * 1000)) * 100);
+        timeProgress.style.transform = 'translate(' + time + '%, 0)';
+      }
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
